@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.6dc7d434.css",
-    "main.js": "/repository-name/static/js/main.772e50e9.js",
-    "static/js/787.bae7ba98.chunk.js": "/repository-name/static/js/787.bae7ba98.chunk.js",
-    "index.html": "/repository-name/index.html",
-    "main.6dc7d434.css.map": "/repository-name/static/css/main.6dc7d434.css.map",
-    "main.772e50e9.js.map": "/repository-name/static/js/main.772e50e9.js.map",
-    "787.bae7ba98.chunk.js.map": "/repository-name/static/js/787.bae7ba98.chunk.js.map"
+    "main.css": "/react_introduccion/static/css/main.6dc7d434.css",
+    "main.js": "/react_introduccion/static/js/main.4a744638.js",
+    "static/js/787.bae7ba98.chunk.js": "/react_introduccion/static/js/787.bae7ba98.chunk.js",
+    "index.html": "/react_introduccion/index.html",
+    "main.6dc7d434.css.map": "/react_introduccion/static/css/main.6dc7d434.css.map",
+    "main.4a744638.js.map": "/react_introduccion/static/js/main.4a744638.js.map",
+    "787.bae7ba98.chunk.js.map": "/react_introduccion/static/js/787.bae7ba98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dc7d434.css",
-    "static/js/main.772e50e9.js"
+    "static/js/main.4a744638.js"
   ]
 }
