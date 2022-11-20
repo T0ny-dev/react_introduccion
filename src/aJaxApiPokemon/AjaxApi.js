@@ -17,7 +17,7 @@ class AjaxApiPokemon extends React.Component{
   };
 
   componentDidMount() {
-    let url = "https://pokeapi.co/api/v2/pokemon/";
+    let url = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100";
     fetch(url)
       .then((res) => res.json())
       .then((json) => {
