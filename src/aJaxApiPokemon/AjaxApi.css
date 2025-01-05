@@ -1,16 +1,16 @@
-.Container{
+.Container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0px 50px;
-
+  padding: 0px 20px;
 }
 
 .Containers__pokemons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px; /* Espaciado uniforme entre figuras */
 }
 
 figure {
@@ -23,14 +23,21 @@ figure {
   margin: 0.5em;
   padding: 1em;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.36); 
-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.36);
+  transition: transform 0.3s ease; /* Animación al pasar el cursor */
+}
+
+figure:hover {
+  transform: scale(1.05); /* Efecto de zoom */
 }
 
 figure img {
-background-color: #D6E0EF;
-border-radius: 100px;
-padding: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: #D6E0EF;
+  border-radius: 100px;
+  padding: 5px;
 }
 
 figcaption {
@@ -38,28 +45,59 @@ figcaption {
 }
 
 span {
-  display: -webkit-inline-box;
+  display: inline-block;
   background-color: #E15EF2;
-  color:#fff;
+  color: #fff;
   padding: 5px 10px;
   border-radius: 15px;
   margin-bottom: 5px;
   margin-right: 3px;
 }
-.attack{
-  display: -webkit-inline-box;
-  background-color: #d9340b;
-  color:#fff;
-  padding: 5px 10px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-} 
 
-@media (max-width: 600px) {
+.attack {
+  background-color: #d9340b;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  figure {
+    width: 45%; /* Ajusta el ancho en pantallas medianas */
+  }
+
+  figure img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  figure {
+    width: 60%; /* Mayor ancho en pantallas pequeñas */
+  }
+
   figure img {
     width: 70px;
-    background-color: #D6E0EF;
-    border-radius: 100px;
-    padding: 1px;
-    }
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Container {
+    padding: 0px 10px; /* Reduce el padding en dispositivos pequeños */
+  }
+
+  figure {
+    width: 90%; /* Figura ocupa casi todo el ancho */
+  }
+
+  figure img {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+  }
+
+  span {
+    font-size: 0.9rem; /* Texto más pequeño en dispositivos pequeños */
+    padding: 4px 8px;
+  }
 }
